@@ -62,3 +62,25 @@ const callback4 = async () => {
 
 await callback1();
 await callback2();
+await callback3();
+await callback1();
+await callback1();
+await callback1();
+await callback1();
+await callback1();
+await callback1();
+await callback1();
+await callback2();
+await callback3();
+await callback2();
+await callback3();
+await callback2();
+await callback3();
+await callback2();
+await callback3();
+await callback2();
+await callback3();
+await callback2();
+await callback3();
+await callback2();
+await callback3();
