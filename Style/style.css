@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url('C:\Users\Admin\source\repos\psychological-support-website\psychological-support-website\Шрифти\e-Ukraine-Regular\e-ukraine-regular_w.ttf') format('truetype'); 
+}
+
+.mainText{
+    color:#8A938B;
+    font-family: 'e-Ukraine', sans-serif;
+    font-size: 20px;
+}
+
+h2{
+    font-size: 42px;
+    font-family: 'FixelText', sans-serif;
+    font-weight: bold;
+}
+
+.header_block {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #F4FFF6;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+}
+
+body{
+    background-color: #F4FFF6;
+}
+
+#logo_container{
+    width:140px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo{
+    width: 30px;
+    height: 30px;
+}
+
+#logo_background{
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    border-radius: 50%;
+    background-color: #58A65F;
+}
+
+#main_title{
+    color: #013700;
+    margin-left: 10px;
+    font-size: 31px;
+    font-family: 'FixelText', sans-serif;
+}
+
+.button_block{
+    margin-left: auto;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content_btn{
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: 'e-Ukraine', sans-serif;
+    font-size: 20px;
+}
+
+.content_btn:hover{
+    background-color: #BEC7C0;
+}
+
+.make_appointment{ /* button */
+    height: 50px;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    background-color: #59A560;
+    color:white;
+    font-family: 'e-Ukraine', sans-serif;
+    font-size: 20px;
+}
+
+.make_appointment:hover{
+    background-color: #305733;
+    color:gray;
+}
+
+.introduction_block{
+    height: auto;
+    margin-left: 100px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#about_us{
+    width: 630px;
+    float:left;
+    z-index: 1;
+}
+
+#introImg{
+    margin-top: 100px;
+    float: right;
+    width: 626px;
+    height: 626px;
+}
+
+.proposition{    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
