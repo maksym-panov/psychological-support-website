@@ -1,9 +1,30 @@
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url('C:\Users\Admin\source\repos\psychological-support-website\psychological-support-website\Шрифти\e-Ukraine-Regular\e-ukraine-regular_w.ttf') format('truetype'); 
+}
+
+.mainText{
+    color:#8A938B;
+    font-family: 'e-Ukraine', sans-serif;
+    font-size: 20px;
+}
+
+h2{
+    font-size: 42px;
+    font-family: 'FixelText', sans-serif;
+    font-weight: bold;
+}
+
 .header_block {
+    position: fixed;
+    width: 100%;
+    top: 0;
     background-color: #F4FFF6;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 100px;
 }
 
 body{
@@ -11,43 +32,53 @@ body{
 }
 
 #logo_container{
-    width:100px;
-    height: 40px;
-    margin-left: 75px;
+    width:140px;
+    margin-left: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 #logo{
-    width: 25px;
-    height: 25px;
-    /*background-color: #57A660;
-    border-radius: 50%;*/
+    width: 30px;
+    height: 30px;
+}
+
+#logo_background{
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    border-radius: 50%;
+    background-color: #58A65F;
 }
 
 #main_title{
     color: #013700;
-    margin-left:5px;
+    margin-left: 10px;
+    font-size: 31px;
+    font-family: 'FixelText', sans-serif;
 }
 
 .button_block{
     margin-left: auto;
-    margin-right: 75px;
+    margin-right: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .content_btn{
-    height: 26px;
+    height: 50px;
     width: auto;
-    margin-right: 15px;
+    margin-right: 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: transparent;
-
-    font-size: 14px;
+    font-family: 'e-Ukraine', sans-serif;
+    font-size: 20px;
 }
 
 .content_btn:hover{
@@ -55,14 +86,14 @@ body{
 }
 
 .make_appointment{ /* button */
-    height: 26px;
-    width: 150px;
+    height: 50px;
+    width: 250px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #59A560;
     color:white;
-
-    font-size: 14px;
+    font-family: 'e-Ukraine', sans-serif;
+    font-size: 20px;
 }
 
 .make_appointment:hover{
@@ -71,14 +102,29 @@ body{
 }
 
 .introduction_block{
-    width: 327px;
     height: auto;
-    margin-left: 75px;
-    margin-top: 125px;
+    margin-left: 100px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.proposition{
-    width: 327px;
+#about_us{
+    width: 630px;
+    float:left;
+    z-index: 1;
+}
+
+#introImg{
+    margin-top: 100px;
+    float: right;
+    width: 626px;
+    height: 626px;
+}
+
+.proposition{    
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
