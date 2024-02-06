@@ -1,4 +1,4 @@
 function scrollToElement(targetId) {
-    var element = document.getElementById(targetId);
+    let element = document.getElementById(targetId);
     element.scrollIntoView({behavior: "smooth", block: "center"});
 }
