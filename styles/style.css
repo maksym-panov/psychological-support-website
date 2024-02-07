@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url('C:\Users\Admin\source\repos\psychological-support-website\psychological-support-website\Шрифти\e-Ukraine-Regular\e-ukraine-regular_w.ttf') format('truetype'); 
+}
+
+.mainText{
+    color:#8A938B;
+    font-family: 'e-Ukraine', sans-serif;
+    font-size: 20px;
+}
+
+h2{
+    font-size: 42px;
+    font-family: 'FixelText', sans-serif;
+    font-weight: bold;
+}
+
+.header_block {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #F4FFF6;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    z-index: 999; /*пофіксив накладання хедеру на інші блоки*/
+}
+
+body{
+    background-color: #F4FFF6;
+}
+
+#logo_container{
+    width:140px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo{
+    width: 30px;
+    height: 30px;
+}
+
+#logo_background{
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    border-radius: 50%;
+    background-color: #58A65F;
+}
+
+#main_title{
+    color: #013700;
+    margin-left: 10px;
+    font-size: 31px;
+    font-family: 'FixelText', sans-serif;
+}
+
+.button_block{
+    margin-left: auto;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content_btn{
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: 'e-Ukraine', sans-serif;
+    font-size: 20px;
+}
+
+.content_btn:hover{
+    background-color: #BEC7C0;
+}
+
+.make_appointment{ /* button */
+    height: 50px;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    background-color: #59A560;
+    color:white;
+    font-family: 'e-Ukraine', sans-serif;
+    font-size: 20px;
+}
+
+.make_appointment:hover{
+    background-color: #305733;
+    color:gray;
+}
+
+.introduction_block{
+    height: auto;
+    margin-left: 100px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#about_us{
+    width: 630px;
+    float:left;
+    z-index: 1;
+}
+
+#introImg{
+    margin-top: 100px;
+    float: right;
+    width: 626px;
+    height: 626px;
+}
+
+.proposition{    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.counter {
+    width: 1240px;
+    height: 170px;
+    background-color: #59A560;
+    color: white;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 14px;
+}
+
+.rectangle {
+    color: white;
+    font-size: 20px;
+    font-family: 'e-Ukraine', sans-serif;
+    text-align: center;
+    line-height: 2px;
+    margin-top: 34px;
+}
+
+footer{
+    width: 100%;
+    height: 278px;
+    background-color: #58A65F;
+    padding-left: 100px;
+    margin-top: 30px; /*для відокремлення футеру пізніше прибрати*/
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.footer-section .logo-line {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img{
+    width: 52px;
+    height: 52px;
+    margin-right: 7px;
+}
+
+.logo-name {
+    font-size: 31px;
+    font-family: 'e-Ukraine', sans-serif;
+    color: #f4fff5;
+    font-weight: 600;
+}
+
+.logo-desc {
+    width: 280px;
+    font-size: 19px;
+    font-family: 'e-Ukraine', sans-serif;
+    color: #f4fff5;
+    margin-top: -10px;
+    letter-spacing: 1px;
+}
+
+.footer-social{
+    margin-top: 7px;
+}
+
+.social-img{
+    margin-right: 24px;
+}
+
+.information-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 121px;
+}
+
+.information-list p{
+    max-width: 250px;
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-family: 'e-Ukraine', sans-serif;
+    color: #f4fff5;
+    word-wrap: break-word;
+}
+
