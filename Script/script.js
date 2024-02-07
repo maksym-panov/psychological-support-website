@@ -4,18 +4,18 @@ function scrollToElement(targetId) {
 }
 
 function animateValue(id, start, end, duration) { // анімація підрахунку
-    var range = end - start;
-    var minTimer = 50;
-    var stepTime = Math.abs(Math.floor(duration / range));
+    let range = end - start;
+    let minTimer = 50;
+    let stepTime = Math.abs(Math.floor(duration / range));
     stepTime = Math.max(stepTime, minTimer);
-    var startTime = new Date().getTime();
-    var endTime = startTime + duration;
-    var timer;
+    let startTime = new Date().getTime();
+    let endTime = startTime + duration;
+    let timer;
 
     function run() {
-        var now = new Date().getTime();
-        var remaining = Math.max((endTime - now) / duration, 0);
-        var value = Math.round(end - (remaining * range));
+        let now = new Date().getTime();
+        let remaining = Math.max((endTime - now) / duration, 0);
+        let value = Math.round(end - (remaining * range));
         document.getElementById(id).innerHTML = value;
         if (value == end) {
             clearInterval(timer);
