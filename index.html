@@ -4,11 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>ICalm</title>
-    <link rel="stylesheet" href="Style/style.css">
-    <link rel="stylesheet" href="Style/normalize.css">
-    <script src="Script/script.js"></script>
-
-    <!-- це 2 посилання для шрифтів -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.macpaw.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.macpaw.com/css?family=FixelText:700;400"> 
 </head>
@@ -20,7 +17,7 @@
             <div id="logo_container">
 
                 <div id="logo_background">
-                    <img id="logo" src="Img/Logo.png" alt="Logo"> <!-- Лого -->
+                    <img id="logo" src="images/logo.png" alt="Logo"> <!-- Лого -->
                 </div>
 
                 <h3 id="main_title">ICalm</h3>
@@ -61,17 +58,59 @@
             </div>
         </div>
 
-        <img Id="introImg" src="./Img/IntroImg.png" alt="introduction image">
+        <img Id="introImg" src="./images/intro-img.png" alt="introduction image">
 
     </div>
 
-    <div calss="counter"> <!-- блок рахунку сеансів -->
-
+    <div class="counter"> <!-- блок рахунку сеансів -->
+        <div class="rectangle">
+            <h2 id="count1">893</h2>
+            <p>провели індивідуальних сеансів</p>
+        </div>
+        <div class="rectangle">
+            <h2 id="count2">674</h2>
+            <p>провели групових сеансів</p>
+        </div>
+        <div class="rectangle">
+            <h2 id="count3">2748</h2>
+            <p>клієнтів зробили щасливими</p>
+        </div>
     </div>
 
-    
-
-
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="logo-line">
+                    <img src="images/Logo-footer.png" alt="Footer Logo" class="logo-img">
+                    <p class="logo-name">ICalm</p>
+                </div>
+                <p class="logo-desc">InnerCalm - завжди поруч.</p>
+                <div class="footer-social">
+                    <a href="https://www.youtube.com/watch?v=La7B8mBnTXs&t=59s"><img src="images/instagram.png" alt="Instagram" class="social-img"/></a>
+                    <a href="https://www.youtube.com/watch?v=La7B8mBnTXs&t=59s"><img src="images/facebook.png" alt="Facebook" class="social-img"/></a>
+                    <a href="https://www.youtube.com/watch?v=La7B8mBnTXs&t=59s"><img src="images/telegram.png" alt="Telegram" class="social-img"/></a>
+                  </div>
+            </div>
+            <!-- допрацювати та потестит відстань між інформаційними блоками -->
+              <div class="information-list">
+                <p>Про нас</p>
+                <p>Відгуки</p>
+                <p>Спеціалісти</p>
+                <p>Питання</p>
+              </div>
+              <div class="information-list">
+                <p>Угода користувача</p>
+                <p>Угода про конфіденційність</p>
+                <p>Публічна оферта</p>
+              </div>
+              <div class="information-list" style="margin-left: 0px;">
+                <p>+380 63 899 32 22</p>
+                <p>icalm@gmail.com</p>
+                <p style="max-width: 300px;">вул. Сумська, 34, м. Харків, Харківська обл.</p>
+              </div>
+        </div>
+    </footer>
+   
+    <script src="./scripts/script.js"></script>
 </body>
-
 </html>
