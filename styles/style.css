@@ -281,6 +281,132 @@ body {
     margin-top: 34px;
 }
 
+.faq {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.faq-item {
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #58A65F;
+}
+
+.faq-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question {
+    font-size: 31px;
+    font-weight: 600;
+    font-family: 'e-Ukraine', sans-serif;
+}
+
+.faq-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    text-align: right;
+    position: relative;
+}
+
+.faq-content {
+    display: none;
+    overflow: hidden;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'e-Ukraine', sans-serif;
+}
+
+.faq-item.active .faq-content {
+    display: block;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 100px;
+    width: 100%;
+  }
+
+.contact-form h2, .contact-form p {
+    margin: 0;
+  }  
+
+.form-question {
+      padding-right: 97px;
+}
+
+.form-question p{
+    font-size: 19px;
+    font-family: 'e-Ukraine', sans-serif;
+    color: #818181;
+    opacity: 85%;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    margin-right: 400px;
+}
+
+.contacts input[type="text"], input[type="email"]{
+    width: 609px;
+    margin-bottom: 20px;
+    padding: 21px 0 22px 30px;
+    border-radius: 12px;
+    border: 3px solid #030B00;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: 'e-Ukraine', sans-serif;
+    color: #818181;
+    opacity: 85%;
+}
+
+.contacts input[type="message"]{
+    width: 609px;
+    max-height: 147px;
+    margin-bottom: 20px;
+    padding: 21px 0 104px 30px;
+    border-radius: 12px;
+    border: 3px solid #030B00;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: 'e-Ukraine', sans-serif;
+    color: #818181;
+    opacity: 85%;
+}
+
+.contacts input:focus {
+    color: #030B00;
+}
+
+
+.contacts button[type="submit"]{
+    height: 65px;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+    font-family: 'e-Ukraine', sans-serif;
+    color: #fff;
+    background-color: #58A65F;
+    cursor: pointer;
+}
+
+
 footer{
     width: 100%;
     height: 278px;

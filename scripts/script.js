@@ -166,3 +166,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+/** 
+* Gets all FAQ items and sets event handlers for the FAQ toggle buttons. 
+* Defines logic that changes the visibility of the FAQ content depending on the current state of the switch.
+*/
+
+const faqItems = document.querySelectorAll('.faq-item');
+const faqContents = document.querySelectorAll('.faq-content');
+
+faqItems.forEach((item, index) => {
+  const toggleButton = item.querySelector('.faq-toggle');
+  const faqContent = faqContents[index];
+
+  toggleButton.addEventListener('click', () => {
+    item.classList.toggle('active');
+    if (item.classList.contains('active')) {
+      faqContent.style.transform = "scaleY(1)";
+    } else {
+      faqContent.style.transform = "scaleY(0)";
+    }
+  });
+});
