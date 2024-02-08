@@ -1,336 +1,355 @@
 <!DOCTYPE html>
 <html lang="uk-UA">
-  <head>
-    <meta charset="UTF-8" />
-    <title>ICalm</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="preconnect" href="https://fonts.macpaw.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.macpaw.com/css?family=FixelText:700;400"
-    />
-  </head>
 
-  <body>
-    <header>
-      <div class="header_block">
-        <!-- заголовок -->
+<head>
+  <meta charset="UTF-8" />
+  <title>ICalm</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="preconnect" href="https://fonts.macpaw.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.macpaw.com/css?family=FixelText:700;400" />
+</head>
 
-        <div id="logo_container">
-          <div id="logo_background">
-            <img id="logo" src="images/logo.png" alt="Logo" />
-            <!-- Лого -->
-          </div>
+<body>
+  <header>
+    <div class="header_block">
+      <!-- заголовок -->
 
-          <h3 id="main_title">ICalm</h3>
+      <div id="logo_container">
+        <div id="logo_background">
+          <img id="logo" src="images/logo.png" alt="Logo" />
+          <!-- Лого -->
         </div>
 
-        <div class="button_block">
-          <!-- кнопки -->
-          <button class="content_btn" onclick="scrollToElement('about_us')">
-            Про нас
-          </button>
-          <button class="content_btn" onclick="scrollToElement('specialists')">
-            Спеціалісти
-          </button>
-          <button class="content_btn" onclick="scrollToElement('reviews')">
-            Відгуки
-          </button>
-          <button class="content_btn" onclick="scrollToElement('FAQ')">
-            Питання
-          </button>
-          <button class="make_appointment">Запис на прийом</button>
-        </div>
+        <h3 id="main_title">ICalm</h3>
       </div>
-    </header>
 
-    <div class="introduction_block">
-      <!-- блок "про нас" -->
+      <div class="button_block">
+        <!-- кнопки -->
+        <button class="content_btn" onclick="scrollToElement('about_us')">
+          Про нас
+        </button>
+        <button class="content_btn" onclick="scrollToElement('specialists')">
+          Спеціалісти
+        </button>
+        <button class="content_btn" onclick="scrollToElement('reviews')">
+          Відгуки
+        </button>
+        <button class="content_btn" onclick="scrollToElement('FAQ')">
+          Питання
+        </button>
+        <button class="make_appointment">Запис на прийом</button>
+      </div>
+    </div>
+  </header>
 
-      <div id="about_us">
-        <h2>
-          <b
-            >Підтримка на кожному кроці: 3
-            <i style="color: #51a258; font-style: normal">InnerCalm</i> ви не
-            самі</b
-          >
-        </h2>
+  <div class="introduction_block">
+    <!-- блок "про нас" -->
 
-        <!-- //пофіксити відстань між ними -->
+    <div id="about_us">
+      <h2>
+        <b>Підтримка на кожному кроці: 3
+          <i style="color: #51a258; font-style: normal">InnerCalm</i> ви не
+          самі</b>
+      </h2>
 
-        <!-- //h2 використовувати як заголовок в подальшому -->
-        <!-- //mainText - для іншого тексту, в базі стоїть 20px розмір-->
+      <!-- //пофіксити відстань між ними -->
 
-        <p class="mainText" style="font-size: 23px">
-          InnerCalm - це твої турботливі друзі, що завжди поруч. Професійні
-          психологи нашого центру працюють 24/7, готові надати вам допомогу в
-          будь-який час.
+      <!-- //h2 використовувати як заголовок в подальшому -->
+      <!-- //mainText - для іншого тексту, в базі стоїть 20px розмір-->
+
+      <p class="mainText" style="font-size: 23px">
+        InnerCalm - це твої турботливі друзі, що завжди поруч. Професійні
+        психологи нашого центру працюють 24/7, готові надати вам допомогу в
+        будь-який час.
+      </p>
+
+      <div class="proposition">
+        <button class="make_appointment">Запис на прийом</button>
+        <p class="mainText" style="margin-left: 15px">
+          Перший сеанс - <b>безкоштовно!</b> Реєструйтеся вже зараз
         </p>
+      </div>
+    </div>
 
-        <div class="proposition">
-          <button class="make_appointment">Запис на прийом</button>
+    <img id="introImg" src="./images/intro-img.png" alt="introduction image" />
+  </div>
+
+  <div class="counter">
+    <!-- блок рахунку сеансів -->
+    <div class="rectangle">
+      <h2 id="count1">893</h2>
+      <p>провели індивідуальних сеансів</p>
+    </div>
+    <div class="rectangle">
+      <h2 id="count2">674</h2>
+      <p>провели групових сеансів</p>
+    </div>
+    <div class="rectangle">
+      <h2 id="count3">2748</h2>
+      <p>клієнтів зробили щасливими</p>
+    </div>
+  </div>
+
+  <div class="specialists" id="specialists">
+    <h2>Спеціалісти</h2>
+
+    <div class="wrapper">
+      <div class="item">
+        <div class="specialist_text" style="background-color: #cbe5cd">
+          <h2 style="margin-left: 15px">
+            Анатолій Гладанюк <br /><b class="mainText">Сімейний психотерапевт</b>
+          </h2>
           <p class="mainText" style="margin-left: 15px">
-            Перший сеанс - <b>безкоштовно!</b> Реєструйтеся вже зараз
+            Він надає підтримку в побудові позитивного ставлення до себе,
+            допомагаючи клієнтам знаходити внутрішню силу та віру в свої
+            можливості.
+            <br /><br />
+            Його інтегративний підхід охоплює широкий спектр методів,
+            включаючи когнітивно-поведінкову терапію, гештальт-терапію та
+            психодинамічні методи. Анатолій сприяє вирішенню внутрішніх
+            конфліктів, розбудові здорових міжособистісних відносин і
+            підвищенню самосвідомості.
+            <br /><br />
+            Гладанюк збагатив свої знання, працюючи в різних місцях світу, де
+            він отримав досвід у супроводі сімей та розв'язанні конфліктів.
+            Він став визнаним експертом у сфері сімейної психотерапії та часто
+            бере участь у міжнародних конференціях.
+            <br /><br />
+            Поза своєю практикою, Анатолій Гладанюк є автором численних статей
+            та книг з теми міжособистісних відносин та розвитку родин. Він
+            активно працює над тим, щоб розширити свідомість про важливість
+            емоційного благополуччя в родинах та сприяти їхньому зміцненню.
           </p>
+          <button class="details_btn" onclick="showText(this)" style="border-bottom-color: #58a65f">
+            Деталі
+          </button>
+        </div>
+
+        <div class="specialist_photo">
+          <img src="./images/people/anatoliy.jpg" />
         </div>
       </div>
 
-      <img
-        id="introImg"
-        src="./images/intro-img.png"
-        alt="introduction image"
-      />
-    </div>
-
-    <div class="counter">
-      <!-- блок рахунку сеансів -->
-      <div class="rectangle">
-        <h2 id="count1">893</h2>
-        <p>провели індивідуальних сеансів</p>
-      </div>
-      <div class="rectangle">
-        <h2 id="count2">674</h2>
-        <p>провели групових сеансів</p>
-      </div>
-      <div class="rectangle">
-        <h2 id="count3">2748</h2>
-        <p>клієнтів зробили щасливими</p>
-      </div>
-    </div>
-
-    <div class="specialists" id="specialists">
-      <h2>Спеціалісти</h2>
-
-      <div class="wrapper">
-        <div class="item">
-          <div class="specialist_text" style="background-color: #cbe5cd">
-            <h2 style="margin-left: 15px">
-              Анатолій Гладанюк <br /><b class="mainText"
-                >Сімейний психотерапевт</b
-              >
-            </h2>
-            <p class="mainText" style="margin-left: 15px">
-              Він надає підтримку в побудові позитивного ставлення до себе,
-              допомагаючи клієнтам знаходити внутрішню силу та віру в свої
-              можливості.
-              <br /><br />
-              Його інтегративний підхід охоплює широкий спектр методів,
-              включаючи когнітивно-поведінкову терапію, гештальт-терапію та
-              психодинамічні методи. Анатолій сприяє вирішенню внутрішніх
-              конфліктів, розбудові здорових міжособистісних відносин і
-              підвищенню самосвідомості.
-              <br /><br />
-              Гладанюк збагатив свої знання, працюючи в різних місцях світу, де
-              він отримав досвід у супроводі сімей та розв'язанні конфліктів.
-              Він став визнаним експертом у сфері сімейної психотерапії та часто
-              бере участь у міжнародних конференціях.
-              <br /><br />
-              Поза своєю практикою, Анатолій Гладанюк є автором численних статей
-              та книг з теми міжособистісних відносин та розвитку родин. Він
-              активно працює над тим, щоб розширити свідомість про важливість
-              емоційного благополуччя в родинах та сприяти їхньому зміцненню.
-            </p>
-            <button
-              class="details_btn"
-              onclick="showText(this)"
-              style="border-bottom-color: #58a65f"
-            >
-              Деталі
-            </button>
-          </div>
-
-          <div class="specialist_photo">
-            <img src="./images/people/anatoliy.jpg" />
-          </div>
+      <div class="item">
+        <div class="specialist_photo">
+          <img src="./images/people/mark.jpg" />
         </div>
 
-        <div class="item">
-          <div class="specialist_photo">
-            <img src="./images/people/mark.jpg" />
-          </div>
-
-          <div class="specialist_text" style="background-color: #ffd2c9">
-            <h2 style="margin-left: 15px">
-              Марк Сміт <br /><b class="mainText">Психолог-практик</b>
-            </h2>
-            <p class="mainText" style="margin-left: 15px">
-              Спеціалізується у використанні метафоричних асоціативних карт.
-              Його практика орієнтована на працю з різними психологічними
-              викликами, включаючи панічні атаки, депресію, небажані емоційні
-              стани, психологічні травми, а також проблеми самооцінки та
-              самоцінності.
-              <br /><br />
-              Марк володіє унікальною експертизою у використанні метафоричних
-              карт для розкриття та розв'язання психологічних проблем. Він
-              допомагає клієнтам знаходити та розуміти приховані аспекти їхніх
-              емоцій, розбудовувати позитивне ставлення до себе та переживати
-              емоції більш свідомо.
-              <br /><br />
-              Завдяки його роботі, клієнти Марка розвивають внутрішню гармонію,
-              знаходять власні потреби та мотивацію, і врешті-решт досягають
-              більш глибокого розуміння себе і свого оточення.
-            </p>
-            <button
-              class="details_btn"
-              onclick="showText(this)"
-              style="border-bottom-color: #ff6646"
-            >
-              Деталі
-            </button>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="specialist_text" style="background-color: #cbe5cd">
-            <h2 style="margin-left: 15px">
-              Марія Гончарук <br /><b class="mainText">Дитячий психолог</b>
-            </h2>
-            <p class="mainText" style="margin-left: 15px">
-              Приділяє особливу увагу розвитку та добробуту маленьких пацієнтів.
-              Вона володіє глибоким розумінням дитячої психології та застосовує
-              інноваційні методики для стимулювання розвитку дітей.
-              <br /><br />
-              Марія спеціалізується на роботі з емоційними труднощами, вивченні
-              навичок соціалізації та підтримці сімей у вирішенні викликів,
-              пов'язаних з дитячим розвитком. Її веселий підхід та тепло
-              сприяють створенню довірчого відношення з кожним маленьким
-              пацієнтом.
-              <br /><br />
-              Марія використовує різноманітні інтерактивні техніки, гру та
-              творчість, щоб сприяти розвитку важливих навичок та вирішенню
-              проблем. Вона також працює з батьками, допомагаючи їм розуміти та
-              підтримувати емоційні та психологічні потреби своїх дітей.
-              <br /><br />
-              Марія Гончарук - не лише професіонал у своїй справі, але й
-              невтомна захисниця дитячого щастя та психічного здоров'я.
-            </p>
-            <button
-              class="details_btn"
-              onclick="showText(this)"
-              style="border-bottom-color: #58a65f"
-            >
-              Деталі
-            </button>
-          </div>
-
-          <div class="specialist_photo">
-            <img src="./images/people/marie.jpg" />
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="specialist_photo">
-            <img src="./images/people/alina.jpg" />
-          </div>
-
-          <div class="specialist_text" style="background-color: #ffd2c9">
-            <h2 style="margin-left: 15px">
-              Аліна Стефанчук <br /><b class="mainText">Психолог стосунків</b>
-            </h2>
-            <p class="mainText" style="margin-left: 15px">
-              Володіє глибоким розумінням міжособистісних відносин та вміє
-              допомагати парарам розбиратися в їхніх труднощах. З емпатією та
-              відданістю, вона створює комфортне середовище для вивчення та
-              вирішення складних питань, пов'язаних із сімейними та романтичними
-              зв'язками.
-              <br /><br />
-              Аліна спеціалізується на роботі з парами, де використовує
-              різноманітні терапевтичні методи, такі як емоційно-фокусована та
-              системна терапія. Вона допомагає встановлювати здорові
-              комунікаційні моделі, вирішувати конфлікти та покращувати
-              загальний психологічний клімат в парі.
-              <br /><br />
-              Аліна також активно вивчає сучасні тенденції та інноваційні
-              підходи в області психології стосунків, щоб завжди пропонувати
-              своїм клієнтам найефективніші та актуальні методи підтримки. Її
-              мета - допомагати парарам побудувати здорові та задовільні
-              стосунки, сприяючи особистісному росту і гармонії в їхньому житті.
-            </p>
-            <button
-              class="details_btn"
-              onclick="showText(this)"
-              style="border-bottom-color: #ff6646"
-            >
-              Деталі
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <button class="btn prev">
-        <img
-          src="./images/up-arrow.png"
-          class="btn_arrow"
-          alt="Scroll specialists left button"
-          style="transform: rotate(-90deg)"
-        />
-      </button>
-      <button class="btn next">
-        <img
-          src="./images/up-arrow.png"
-          class="btn_arrow"
-          alt="Scroll specialists right button"
-          style="transform: rotate(90deg)"
-        />
-      </button>
-    </div>
-
-    <footer>
-      <div class="footer-container">
-        <div class="footer-section">
-          <div class="logo-line">
-            <img
-              src="./images/logo-footer.png"
-              alt="Footer Logo"
-              class="logo-img"
-            />
-            <p class="logo-name">ICalm</p>
-          </div>
-          <p class="logo-desc">InnerCalm - завжди поруч.</p>
-          <div class="footer-social">
-            <a href="https://www.youtube.com/watch?v=La7B8mBnTXs&t=59s"
-              ><img
-                src="./images/instagram.png"
-                alt="Instagram"
-                class="social-img"
-            /></a>
-            <a href="https://www.youtube.com/watch?v=La7B8mBnTXs&t=59s"
-              ><img
-                src="./images/facebook.png"
-                alt="Facebook"
-                class="social-img"
-            /></a>
-            <a href="https://www.youtube.com/watch?v=La7B8mBnTXs&t=59s"
-              ><img
-                src="./images/telegram.png"
-                alt="Telegram"
-                class="social-img"
-            /></a>
-          </div>
-        </div>
-        <!-- допрацювати та потестит відстань між інформаційними блоками -->
-        <div class="information-list">
-          <p>Про нас</p>
-          <p>Відгуки</p>
-          <p>Спеціалісти</p>
-          <p>Питання</p>
-        </div>
-        <div class="information-list">
-          <p>Угода користувача</p>
-          <p>Угода про конфіденційність</p>
-          <p>Публічна оферта</p>
-        </div>
-        <div class="information-list" style="margin-left: 0px">
-          <p>+380 63 899 32 22</p>
-          <p>info@icalm.ua</p>
-          <p style="max-width: 300px">
-            вул. Сумська, 34, м. Харків, Харківська обл.
+        <div class="specialist_text" style="background-color: #ffd2c9">
+          <h2 style="margin-left: 15px">
+            Марк Сміт <br /><b class="mainText">Психолог-практик</b>
+          </h2>
+          <p class="mainText" style="margin-left: 15px">
+            Спеціалізується у використанні метафоричних асоціативних карт.
+            Його практика орієнтована на працю з різними психологічними
+            викликами, включаючи панічні атаки, депресію, небажані емоційні
+            стани, психологічні травми, а також проблеми самооцінки та
+            самоцінності.
+            <br /><br />
+            Марк володіє унікальною експертизою у використанні метафоричних
+            карт для розкриття та розв'язання психологічних проблем. Він
+            допомагає клієнтам знаходити та розуміти приховані аспекти їхніх
+            емоцій, розбудовувати позитивне ставлення до себе та переживати
+            емоції більш свідомо.
+            <br /><br />
+            Завдяки його роботі, клієнти Марка розвивають внутрішню гармонію,
+            знаходять власні потреби та мотивацію, і врешті-решт досягають
+            більш глибокого розуміння себе і свого оточення.
           </p>
+          <button class="details_btn" onclick="showText(this)" style="border-bottom-color: #ff6646">
+            Деталі
+          </button>
         </div>
       </div>
-    </footer>
 
-    <script src="./scripts/script.js"></script>
-  </body>
+      <div class="item">
+        <div class="specialist_text" style="background-color: #cbe5cd">
+          <h2 style="margin-left: 15px">
+            Марія Гончарук <br /><b class="mainText">Дитячий психолог</b>
+          </h2>
+          <p class="mainText" style="margin-left: 15px">
+            Приділяє особливу увагу розвитку та добробуту маленьких пацієнтів.
+            Вона володіє глибоким розумінням дитячої психології та застосовує
+            інноваційні методики для стимулювання розвитку дітей.
+            <br /><br />
+            Марія спеціалізується на роботі з емоційними труднощами, вивченні
+            навичок соціалізації та підтримці сімей у вирішенні викликів,
+            пов'язаних з дитячим розвитком. Її веселий підхід та тепло
+            сприяють створенню довірчого відношення з кожним маленьким
+            пацієнтом.
+            <br /><br />
+            Марія використовує різноманітні інтерактивні техніки, гру та
+            творчість, щоб сприяти розвитку важливих навичок та вирішенню
+            проблем. Вона також працює з батьками, допомагаючи їм розуміти та
+            підтримувати емоційні та психологічні потреби своїх дітей.
+            <br /><br />
+            Марія Гончарук - не лише професіонал у своїй справі, але й
+            невтомна захисниця дитячого щастя та психічного здоров'я.
+          </p>
+          <button class="details_btn" onclick="showText(this)" style="border-bottom-color: #58a65f">
+            Деталі
+          </button>
+        </div>
+
+        <div class="specialist_photo">
+          <img src="./images/people/marie.jpg" />
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="specialist_photo">
+          <img src="./images/people/alina.jpg" />
+        </div>
+
+        <div class="specialist_text" style="background-color: #ffd2c9">
+          <h2 style="margin-left: 15px">
+            Аліна Стефанчук <br /><b class="mainText">Психолог стосунків</b>
+          </h2>
+          <p class="mainText" style="margin-left: 15px">
+            Володіє глибоким розумінням міжособистісних відносин та вміє
+            допомагати парарам розбиратися в їхніх труднощах. З емпатією та
+            відданістю, вона створює комфортне середовище для вивчення та
+            вирішення складних питань, пов'язаних із сімейними та романтичними
+            зв'язками.
+            <br /><br />
+            Аліна спеціалізується на роботі з парами, де використовує
+            різноманітні терапевтичні методи, такі як емоційно-фокусована та
+            системна терапія. Вона допомагає встановлювати здорові
+            комунікаційні моделі, вирішувати конфлікти та покращувати
+            загальний психологічний клімат в парі.
+            <br /><br />
+            Аліна також активно вивчає сучасні тенденції та інноваційні
+            підходи в області психології стосунків, щоб завжди пропонувати
+            своїм клієнтам найефективніші та актуальні методи підтримки. Її
+            мета - допомагати парарам побудувати здорові та задовільні
+            стосунки, сприяючи особистісному росту і гармонії в їхньому житті.
+          </p>
+          <button class="details_btn" onclick="showText(this)" style="border-bottom-color: #ff6646">
+            Деталі
+          </button>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="specialist_text" style="background-color: #cbe5cd">
+          <h2 style="margin-left: 15px">
+            Михайло Борецький <br /><b class="mainText">Психолог-консультант</b>
+          </h2>
+          <p class="mainText" style="margin-left: 15px">
+            Об'єднує в собі глибоке розуміння людської психіки та тонку
+            інтуїцію. Захоплений мисленням і творчим підходом до вирішення
+            проблем, він допомагає своїм клієнтам знаходити нові погляди на
+            життя та переживати емоції більш свідомо.
+            <br /><br />
+            Михайло спеціалізується на роботі зі стресом, тривогами та
+            особистісним розвитком. Він використовує різноманітні підходи,
+            включаючи когнітивно-поведінкову терапію та психодинамічний
+            аналіз, для підтримки своїх клієнтів у подоланні труднощів та
+            досягненні психологічного благополуччя.
+            <br /><br />
+            Михайло Борецький відомий своєю здатністю створювати відкритий та
+            довірчий простір для обговорення проблем, що допомагає клієнтам
+            відкривати нові горизонти і розкривати свій потенціал. Він не лише
+            консультант, але і натхненник, що сприяє особистісному зростанню
+            та психологічній гармонії.
+          </p>
+          <button class="details_btn" onclick="showText(this)" style="border-bottom-color: #58a65f">
+            Деталі
+          </button>
+        </div>
+
+        <div class="specialist_photo">
+          <img src="./images/people/mykhailo.jpg" />
+        </div>
+      </div>
+
+      <div class="item" style="margin-right: 50px">
+        <div class="specialist_photo">
+          <img src="./images/people/john.jpg" />
+        </div>
+
+        <div class="specialist_text" style="background-color: #ffd2c9">
+          <h2 style="margin-left: 15px">
+            Джон Синецький <br /><b class="mainText">Психолог-практик</b>
+          </h2>
+          <p class="mainText" style="margin-left: 15px">
+            Його підхід до роботи базується на глибокому розумінні
+            індивідуальних потреб та вмінні враховувати контекст кожної
+            унікальної ситуації. З його погляду, психологічна практика - це
+            мистецтво взаємодії, в якому він відзначається якістю емпатії та
+            турботливого ставлення до кожного клієнта.
+            <br /><br />
+            Джон спеціалізується на індивідуальній консультації та розвитку
+            особистісних ресурсів. Він відомий своїм практичним підходом до
+            розв'язання проблем, надаючи конкретні інструменти та стратегії,
+            які можна застосовувати в повсякденному житті.
+            <br /><br />
+            Джон Синецький активно вивчає сучасні тенденції в психології та
+            постійно розширює свій методологічний арсенал. Він прагне
+            вдосконалювати свої навички та знання, щоб забезпечити максимальну
+            ефективність консультування та допомогти кожному клієнту досягти
+            психологічної гармонії. Його підхід відзначається глибоким
+            розумінням людської природи та практичним підходом до розвитку
+            особистості.
+          </p>
+          <button class="details_btn" onclick="showText(this)" style="border-bottom-color: #ff6646">
+            Деталі
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn prev">
+      <img src="./images/up-arrow.png" class="btn_arrow" alt="Scroll specialists left button"
+        style="transform: rotate(-90deg)" />
+    </button>
+    <button class="btn next">
+      <img src="./images/up-arrow.png" class="btn_arrow" alt="Scroll specialists right button"
+        style="transform: rotate(90deg)" />
+    </button>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <div class="logo-line">
+          <img src="./images/logo-footer.png" alt="Footer Logo" class="logo-img" />
+          <p class="logo-name">ICalm</p>
+        </div>
+        <p class="logo-desc">InnerCalm - завжди поруч.</p>
+        <div class="footer-social">
+          <a href="https://www.youtube.com/watch?v=La7B8mBnTXs&t=59s"><img src="./images/instagram.png" alt="Instagram"
+              class="social-img" /></a>
+          <a href="https://www.youtube.com/watch?v=La7B8mBnTXs&t=59s"><img src="./images/facebook.png" alt="Facebook"
+              class="social-img" /></a>
+          <a href="https://www.youtube.com/watch?v=La7B8mBnTXs&t=59s"><img src="./images/telegram.png" alt="Telegram"
+              class="social-img" /></a>
+        </div>
+      </div>
+      <!-- допрацювати та потестит відстань між інформаційними блоками -->
+      <div class="information-list">
+        <p>Про нас</p>
+        <p>Відгуки</p>
+        <p>Спеціалісти</p>
+        <p>Питання</p>
+      </div>
+      <div class="information-list">
+        <p>Угода користувача</p>
+        <p>Угода про конфіденційність</p>
+        <p>Публічна оферта</p>
+      </div>
+      <div class="information-list" style="margin-left: 0px">
+        <p>+380 63 899 32 22</p>
+        <p>info@icalm.ua</p>
+        <p style="max-width: 300px">
+          вул. Сумська, 34, м. Харків, Харківська обл.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./scripts/script.js"></script>
+</body>
+
 </html>
