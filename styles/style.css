@@ -166,9 +166,7 @@ body {
     overflow: hidden;
     position: relative;
     align-items: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
+    
 }
 
 .wrapper {
@@ -258,7 +256,7 @@ body {
 
 .specialist_photo img{
     width: 400px;
-    height: 392x;
+    height: 392px;
     border: none;
     border-radius: 20px;
 }
