@@ -80,23 +80,34 @@ const showText = (element) => {
   const parentStyle = element.parentElement.style;
   const sibling = element.previousElementSibling;
   const siblingStyle = sibling.style;
+  let buttonCenterX = element.getBoundingClientRect().left;
 
-  if (element.previousElementSibling.clientHeight === 200) {
+  if (element.previousElementSibling.clientHeight === 250) {
     siblingStyle.height = 'auto';
     siblingStyle.width = '1000px';
-
+    
     parentStyle.height = 'auto';
-    parentStyle.width = '1000px';
+    parentStyle.width = '1050px';
     parentStyle.zIndex = '2';
+
+    if (buttonCenterX > 1000) {
+      parentStyle.transform = 'translateX(-550px)';
+      element.style.transform = 'translateX(850px)';
+    }
 
     element.innerHTML = 'Закрити';
   } else {
-    siblingStyle.height = '200px';
-    siblingStyle.width = '500px';
+    siblingStyle.height = '250px';
+    siblingStyle.width = '450px';
 
     parentStyle.height = '438px';
     parentStyle.width = '500px';
     parentStyle.zIndex = '0';
+
+    if (buttonCenterX > 1000) {
+      parentStyle.transform = 'translateX(0px)';
+      element.style.transform = 'translateX(0px)';
+    }
 
     element.innerHTML = 'Деталі';
   }
@@ -141,6 +152,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const prevBtnStyle = prevBtn.style;
   const nextBtn = document.querySelector('.next');
   const nextBtnStyle = nextBtn.style;
+
+  const wrapper_review = document.querySelector('.wrapper_review');
+  const reviews = document.querySelectorAll('.review');
+  const reviewsLen = reviews.length;
+  const prev_reviewBtn = document.querySelector('.prev_review');
+  const prev_reviewBtnStyle = prev_reviewBtn.style;
+  const next_reviewBtn = document.querySelector('.next_review');
+  const next_reviewBtnStyle = next_reviewBtn.style;
+
   const wrapperTransformUpdate = updateTransform(wrapper);
 
   let currentIndex = 0;
@@ -165,4 +185,30 @@ document.addEventListener('DOMContentLoaded', () => {
       nextBtnStyle.display = 'none';
     }
   });
+
+  const wrapper_reviewTransformUpdate = updateTransform(wrapper_review);
+  prev_reviewBtnStyle.display = 'none';
+
+  let reviewIndex = 0;
+
+  prev_reviewBtn.addEventListener('click', () => {
+    reviewIndex = Math.max(reviewIndex - 1, 0);
+    wrapper_reviewTransformUpdate(reviewIndex);
+
+    next_reviewBtnStyle.display = 'block';
+    if (reviewIndex === 0) {
+      prev_reviewBtnStyle.display = 'none';
+    }
+  });
+
+  next_reviewBtn.addEventListener('click', () => {
+    reviewIndex = Math.min(reviewIndex + 1, reviewsLen - 3);
+    wrapper_reviewTransformUpdate(reviewIndex);
+
+    prev_reviewBtnStyle.display = 'block';
+    if (reviewIndex === reviewsLen - 3) {
+      next_reviewBtnStyle.display = 'none';
+    }
+  });
+
 });

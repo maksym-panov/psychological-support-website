@@ -6,11 +6,11 @@
 .mainText {
     color: #8A938B;
     font-family: 'e-Ukraine', sans-serif;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 48px;
     font-family: 'FixelText', sans-serif;
     font-weight: bold;
 }
@@ -97,7 +97,7 @@ body {
     background-color: #59A560;
     color: white;
     font-family: 'e-Ukraine', sans-serif;
-    font-size: 28px;
+    font-size: 23px;
 
     cursor: pointer;
 }
@@ -170,7 +170,6 @@ body {
     display: flex;
     transition: transform 0.3s ease;
     width: 1600px;
-
 }
 
 .item {
@@ -222,14 +221,24 @@ body {
     border-radius: 20px;
     text-align: left;
     margin-bottom: 20px;
-    
     position: relative;
 }
 
 .specialist_text p{ 
-    height: 200px;  
+    height: 250px;
+    width: 450px;  
     overflow: hidden;
+    margin-top: -10px;
     margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.specialist_text h2{ 
+    font-size: 36px; 
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
 }
 
 .specialist_photo {
@@ -237,6 +246,7 @@ body {
     height: 490px;
     border: none;
     border-radius: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
@@ -254,7 +264,7 @@ body {
     border: none;
     cursor: pointer;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     font-weight: bold;
     text-decoration: none;
     display: inline-block; 
@@ -349,4 +359,98 @@ footer{
     font-family: 'e-Ukraine', sans-serif;
     color: #f4fff5;
     word-wrap: break-word;
+}
+
+.working_steps{
+    height: auto;
+    width: auto;
+    margin-top: 150px;
+    margin-left: 300px;
+    align-items: center;
+    text-align: center;
+}
+
+.steps {
+    
+    align-items: center;
+    display: flex;
+}
+
+#stepsImg {
+    margin-top: 100px;
+    width: 626px;
+    height: 626px;
+}
+
+#stepsArrows{
+    width: 76px;
+    height: 470px;
+
+}
+
+.stepsBlock {
+    width: 420px;
+    height: auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.stepsText {
+    margin-left: 5px;
+}
+
+.reviews{
+    margin-top: 100px;
+    margin-left: 150px;
+    text-align: center;
+    width: 1700px;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+}
+
+.review{
+    border: none;
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+.userPhoto{
+    border: none;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    
+}
+
+.reviewHead{
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.prev_review {
+    left: 0;
+}
+
+.next_review {
+    right: 0;
+    margin-right: 12px;
+}
+
+
+.wrapper_review {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 1600px;
 }
