@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'e-Ukraine';
-    src: url('C:\Users\Admin\source\repos\psychological-support-website\psychological-support-website\Шрифти\e-Ukraine-Regular\e-ukraine-regular_w.ttf') format('truetype'); 
+    src: url('../fonts/e-Ukraine-Regular/e-ukraine-regular_w.ttf') format('truetype');
 }
 
-.mainText{
-    color:#8A938B;
+.mainText {
+    color: #8A938B;
     font-family: 'e-Ukraine', sans-serif;
-    font-size: 20px;
+    font-size: 28px;
 }
 
-h2{
-    font-size: 42px;
+h2 {
+    font-size: 50px;
     font-family: 'FixelText', sans-serif;
     font-weight: bold;
 }
@@ -25,45 +25,45 @@ h2{
     flex-direction: row;
     align-items: center;
     height: 100px;
-    z-index: 999; /*пофіксив накладання хедеру на інші блоки*/
+    z-index: 999;
 }
 
-body{
+body {
     background-color: #F4FFF6;
 }
 
-#logo_container{
-    width:140px;
-    margin-left: 100px;
+#logo_container {
+    width: 200px;
+    margin-left: 150px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#logo{
-    width: 30px;
-    height: 30px;
+#logo {
+    width: 35px;
+    height: 35px;
 }
 
-#logo_background{
-    width: 52px;
-    height: 52px;
+#logo_background {
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:none;
+    border: none;
     border-radius: 50%;
     background-color: #58A65F;
 }
 
-#main_title{
+#main_title {
     color: #013700;
     margin-left: 10px;
-    font-size: 31px;
+    font-size: 40px;
     font-family: 'FixelText', sans-serif;
 }
 
-.button_block{
+.button_block {
     margin-left: auto;
     margin-right: 100px;
     display: flex;
@@ -71,7 +71,7 @@ body{
     align-items: center;
 }
 
-.content_btn{
+.content_btn {
     height: 50px;
     width: auto;
     margin-right: 20px;
@@ -79,56 +79,186 @@ body{
     border-radius: 10px;
     background-color: transparent;
     font-family: 'e-Ukraine', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+
+    cursor: pointer;
 }
 
-.content_btn:hover{
+.content_btn:hover {
     background-color: #BEC7C0;
 }
 
-.make_appointment{ /* button */
-    height: 50px;
-    width: 250px;
+.make_appointment {
+    /* button */
+    height: 60px;
+    width: 300px;
     border: none;
     border-radius: 10px;
     background-color: #59A560;
-    color:white;
+    color: white;
     font-family: 'e-Ukraine', sans-serif;
-    font-size: 20px;
+    font-size: 28px;
+
+    cursor: pointer;
 }
 
-.make_appointment:hover{
+.make_appointment:hover {
     background-color: #305733;
-    color:gray;
+    color: gray;
 }
 
-.introduction_block{
+.introduction_block {
     height: auto;
-    margin-left: 100px;
-    float: left;
+    margin-left: 300px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#about_us{
-    width: 630px;
-    float:left;
+#about_us {
+    width: 730px;
     z-index: 1;
 }
 
-#introImg{
+#introImg {
     margin-top: 100px;
-    float: right;
     width: 626px;
     height: 626px;
 }
 
-.proposition{    
+.proposition {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.counter {
+    height: 200px;
+    width: 1400px;
+    margin-left: 250px;
+    margin-top: 80px;
+    background-color: #58A65F;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.counterBlock {
+    height: 200px;
+    width: 450px;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-left: 5px;
+    ;
+}
+
+.specialists {
+    margin-top: 100px;
+    margin-left: 150px;
+    text-align: center;
+    width: 1700px;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 1600px;
+
+}
+
+.item {
+    width: 500px;
+    /* Ширина кожного елемента */
+    height: 100%;
+    flex-shrink: 0;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    display: block;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover .btn_arrow {
+    background-color: #58A65F;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+    margin-right: 12px;
+}
+
+.btn_arrow {
+    width: 40px;
+    height: 40px;
+}
+
+.specialist_text {
+    width: 500px; 
+    height: 438px;
+    border: none;
+    border-radius: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+    
+    position: relative;
+}
+
+.specialist_text p{ 
+    height: 200px;  
+    overflow: hidden;
+    margin-left: 15px;
+}
+
+.specialist_photo {
+    width: 500px;
+    height: 490px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.specialist_photo img{
+    width: 500px;
+    height: 490px;
+    border: none;
+    border-radius: 20px;
+}
+
+.details_btn{
+    background-color: transparent;
+    font-family: 'e-Ukraine', sans-serif;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block; 
+    border-bottom: 4px solid;
 }
 
 .counter {
@@ -150,6 +280,132 @@ body{
     line-height: 2px;
     margin-top: 34px;
 }
+
+.faq {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.faq-item {
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #58A65F;
+}
+
+.faq-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question {
+    font-size: 31px;
+    font-weight: 600;
+    font-family: 'e-Ukraine', sans-serif;
+}
+
+.faq-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    text-align: right;
+    position: relative;
+}
+
+.faq-content {
+    display: none;
+    overflow: hidden;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'e-Ukraine', sans-serif;
+}
+
+.faq-item.active .faq-content {
+    display: block;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 100px;
+    width: 100%;
+  }
+
+.contact-form h2, .contact-form p {
+    margin: 0;
+  }  
+
+.form-question {
+      padding-right: 97px;
+}
+
+.form-question p{
+    font-size: 19px;
+    font-family: 'e-Ukraine', sans-serif;
+    color: #818181;
+    opacity: 85%;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    margin-right: 400px;
+}
+
+.contacts input[type="text"], input[type="email"]{
+    width: 609px;
+    margin-bottom: 20px;
+    padding: 21px 0 22px 30px;
+    border-radius: 12px;
+    border: 3px solid #030B00;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: 'e-Ukraine', sans-serif;
+    color: #818181;
+    opacity: 85%;
+}
+
+.contacts input[type="message"]{
+    width: 609px;
+    max-height: 147px;
+    margin-bottom: 20px;
+    padding: 21px 0 104px 30px;
+    border-radius: 12px;
+    border: 3px solid #030B00;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: 'e-Ukraine', sans-serif;
+    color: #818181;
+    opacity: 85%;
+}
+
+.contacts input:focus {
+    color: #030B00;
+}
+
+
+.contacts button[type="submit"]{
+    height: 65px;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+    font-family: 'e-Ukraine', sans-serif;
+    color: #fff;
+    background-color: #58A65F;
+    cursor: pointer;
+}
+
 
 footer{
     width: 100%;
@@ -220,4 +476,3 @@ footer{
     color: #f4fff5;
     word-wrap: break-word;
 }
-
