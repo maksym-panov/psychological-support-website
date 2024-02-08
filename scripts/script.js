@@ -6,7 +6,7 @@
 const MIN_STEP_TIMEOUT = 1000;
 const DEFAULT_START_VALUE = 500;
 const STATISTICS_CHANGE_RATE = 30;
-const PX_MULTIPLIER = 550;
+const PX_MULTIPLIER = 440;
 
 const CRYPTO = window.crypto || window.msCrypto;
 
@@ -86,26 +86,26 @@ const showText = (element) => {
   const siblingStyle = sibling.style;
   let buttonCenterX = element.getBoundingClientRect().left;
 
-  if (element.previousElementSibling.clientHeight === 250) {
+  if (element.previousElementSibling.clientHeight === 170) {
     siblingStyle.height = 'auto';
-    siblingStyle.width = '1000px';
+    siblingStyle.width = '800px';
 
     parentStyle.height = 'auto';
-    parentStyle.width = '1050px';
+    parentStyle.width = '840px';
     parentStyle.zIndex = '2';
 
     if (buttonCenterX > 1000) {
-      parentStyle.transform = 'translateX(-550px)';
-      element.style.transform = 'translateX(850px)';
+      parentStyle.transform = 'translateX(-440px)';
+      element.style.transform = 'translateX(666px)';
     }
 
     element.innerHTML = 'Закрити';
   } else {
-    siblingStyle.height = '250px';
-    siblingStyle.width = '450px';
+    siblingStyle.height = '170px';
+    siblingStyle.width = '350px';
 
-    parentStyle.height = '438px';
-    parentStyle.width = '500px';
+    parentStyle.height = '351px';
+    parentStyle.width = '400px';
     parentStyle.zIndex = '0';
 
     if (buttonCenterX > 1000) {
