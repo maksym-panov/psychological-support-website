@@ -6,11 +6,11 @@
 .mainText {
     color: #8A938B;
     font-family: 'e-Ukraine', sans-serif;
-    font-size: 28px;
+    font-size: 23px;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 48px;
     font-family: 'FixelText', sans-serif;
     font-weight: bold;
 }
@@ -30,6 +30,7 @@ h2 {
 
 body {
     background-color: #F4FFF6;
+    align-items: center;
 }
 
 #logo_container {
@@ -90,21 +91,21 @@ body {
 
 .make_appointment {
     /* button */
-    height: 60px;
-    width: 300px;
+    min-height: 60px;
+    min-width: 300px;
     border: none;
     border-radius: 10px;
     background-color: #59A560;
     color: white;
     font-family: 'e-Ukraine', sans-serif;
-    font-size: 28px;
+    font-size: 23px;
 
     cursor: pointer;
 }
 
 .make_appointment:hover {
     background-color: #305733;
-    color: gray;
+    color: grey;
 }
 
 .introduction_block {
@@ -136,7 +137,7 @@ body {
 .counter {
     height: 200px;
     width: 1400px;
-    margin-left: 250px;
+    margin-left: 300px;
     margin-top: 80px;
     background-color: #58A65F;
     border: none;
@@ -144,6 +145,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 
 .counterBlock {
@@ -153,32 +155,32 @@ body {
     color: white;
     text-align: center;
     margin-left: 5px;
-    ;
+    
 }
 
 .specialists {
     margin-top: 100px;
-    margin-left: 150px;
+    margin-left: 300px;
     text-align: center;
-    width: 1700px;
+    width: 1360px;
     overflow: hidden;
     position: relative;
     align-items: center;
+    
 }
 
 .wrapper {
     display: flex;
     transition: transform 0.3s ease;
-    width: 1600px;
-
+    width: 1360px;
 }
 
 .item {
-    width: 500px;
+    width: 400px;
     /* Ширина кожного елемента */
     height: 100%;
     flex-shrink: 0;
-    margin-left: 50px;
+    margin-left: 40px;
     flex-wrap: wrap;
     display: block;
 }
@@ -187,6 +189,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    margin-top: 50px;
     background-color: transparent;
     border: none;
     border-radius: 50%;
@@ -216,33 +219,44 @@ body {
 }
 
 .specialist_text {
-    width: 500px; 
-    height: 438px;
+    width: 400px;
+    height: 351px;
     border: none;
     border-radius: 20px;
     text-align: left;
     margin-bottom: 20px;
-    
     position: relative;
 }
 
-.specialist_text p{ 
-    height: 200px;  
+.specialist_text p{
+    height: 170px;
+    width: 350px;
     overflow: hidden;
+    margin-top: -10px;
     margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.specialist_text h2{
+    font-size: 34px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
 }
 
 .specialist_photo {
-    width: 500px;
-    height: 490px;
+    width: 400px;
+    height: 392px;
     border: none;
     border-radius: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
 .specialist_photo img{
-    width: 500px;
-    height: 490px;
+    width: 400px;
+    height: 392px;
     border: none;
     border-radius: 20px;
 }
@@ -254,10 +268,10 @@ body {
     border: none;
     cursor: pointer;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     font-weight: bold;
     text-decoration: none;
-    display: inline-block; 
+    display: inline-block;
     border-bottom: 4px solid;
 }
 
@@ -272,13 +286,19 @@ body {
     border-radius: 14px;
 }
 
+
+#count1, 
+#count2, 
+#count3 {
+    margin-bottom: 50px;
+}
+
 .rectangle {
     color: white;
     font-size: 20px;
     font-family: 'e-Ukraine', sans-serif;
     text-align: center;
     line-height: 2px;
-    margin-top: 34px;
 }
 
 .faq {
@@ -286,6 +306,7 @@ body {
     max-width: 840px;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 100px;
 }
 
 .faq h2 {
@@ -306,7 +327,7 @@ body {
 }
 
 .question {
-    font-size: 31px;
+    font-size: 27px;
     font-weight: 600;
     font-family: 'e-Ukraine', sans-serif;
 }
@@ -339,15 +360,16 @@ body {
     align-items: center;
     margin: 0 auto;
     padding-left: 100px;
-    width: 100%;
+    width: auto;
   }
 
 .contact-form h2, .contact-form p {
     margin: 0;
-  }  
+  }
 
 .form-question {
       padding-right: 97px;
+      margin-left: 200px;
 }
 
 .form-question p{
@@ -360,7 +382,7 @@ body {
 .contacts{
     display: flex;
     flex-direction: column;
-    margin-right: 400px;
+    margin-right: 300px;
 }
 
 .contacts input[type="text"], input[type="email"]{
@@ -411,11 +433,11 @@ footer{
     width: 100%;
     height: 278px;
     background-color: #58A65F;
-    padding-left: 100px;
     margin-top: 30px; /*для відокремлення футеру пізніше прибрати*/
 }
 
 .footer-container {
+    padding-left: 200px;
     display: flex;
     justify-content: flex-start;
 }
@@ -475,4 +497,97 @@ footer{
     font-family: 'e-Ukraine', sans-serif;
     color: #f4fff5;
     word-wrap: break-word;
+}
+
+.working_steps{
+    height: auto;
+    width: auto;
+    margin-top: 100px;
+    margin-left: 300px;
+    align-items: center;
+    text-align: center;
+}
+
+.steps {
+
+    align-items: center;
+    display: flex;
+}
+
+#stepsImg {
+    margin-top: 100px;
+    width: 626px;
+    height: 626px;
+}
+
+#stepsArrows{
+    width: 91px; 
+    height: 564px;
+
+}
+
+.stepsBlock {
+    width: 420px;
+    height: auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.stepsText {
+    margin-left: 5px;
+}
+
+.reviews{    
+    text-align: center;
+    width: 1360px;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.review{
+    border: none;
+    border-radius: 20px;
+    width: 400px;
+    height: 328px;
+    margin-left: 40px;
+    flex-wrap: wrap;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+.userPhoto{
+    border: none;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+
+}
+
+.reviewHead{
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.prev_review {
+    left: 0;
+}
+
+.next_review {
+    right: 0;
+    margin-right: 12px;
+}
+
+
+.wrapper_review {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 1600px;
 }
