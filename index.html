@@ -41,8 +41,7 @@
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="mainText"
           style="margin-right: 20px; text-decoration: none;">(+38)
           063 899 32 22</a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><button
-            class="make_appointment">Запис на прийом</button></a>
+        <button class="make_appointment" onclick="openLink()">Запис на прийом</button>
       </div>
     </div>
   </header>
@@ -66,8 +65,7 @@
       </p>
 
       <div class="proposition">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><button
-            class="make_appointment">Запис на прийом</button></a>
+        <button class="make_appointment" onclick="openLink()">Запис на прийом</button>
         <p class="mainText" style="margin-left: 15px">
           Перший сеанс - <b>безкоштовно!</b> Реєструйтеся вже зараз
         </p>
@@ -345,9 +343,8 @@
 
     </div>
 
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><button class="make_appointment"
-        style="margin-top: 50px; margin-left: -300px; margin-bottom: 100px;">Запис на прийом</button></a>
-
+    <button class="make_appointment" onclick="openLink()"
+      style="margin-top: 50px; margin-left: -300px; margin-bottom: 100px;">Запис на прийом</button>
 
   </div>
 
@@ -474,7 +471,7 @@
         </div>
       </div>
     </div>
-    <div class="faq-container" id="FAQ">
+    <div class="faq-container" id="FAQ">hover
       <div class="faq-item">
         <div class="faq-wrapper">
           <div class="question">Хто може отримати допомогу?</div>
@@ -497,7 +494,7 @@
       <input type="text" id="name" name="name" placeholder="Ваше ім'я">
       <input type="email" id="email" name="email" placeholder="Ваша електронна пошта">
       <input type="text" name="message" placeholder="Повідомлення">
-      <button type="submit">Надіслати</button>
+      <button type="submit" onclick="openLink()">Надіслати</button>
     </div>
   </form>
 
@@ -521,10 +518,18 @@
       </div>
       <!-- допрацювати та потестит відстань між інформаційними блоками -->
       <div class="information-list">
-        <p>Про нас</p>
-        <p>Спеціалісти</p>
-        <p>Відгуки</p>
-        <p>Питання</p>
+        <button class="content_btn" onclick="scrollToElement('about_us')" style="color: ;">
+          Про нас
+        </button>
+        <button class="content_btn" onclick="scrollToElement('specialists')">
+          Спеціалісти
+        </button>
+        <button class="content_btn" onclick="scrollToElement('reviews')">
+          Відгуки
+        </button>
+        <button class="content_btn" onclick="scrollToElement('FAQ')">
+          Питання
+        </button>
       </div>
       <div class="information-list">
         <p>Угода користувача</p>

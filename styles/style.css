@@ -428,6 +428,10 @@ body {
     cursor: pointer;
 }
 
+.contacts button[type="submit"]:hover{
+    background-color: #305733;
+    color: grey;
+}
 
 footer{
     width: 100%;
@@ -497,6 +501,20 @@ footer{
     font-family: 'e-Ukraine', sans-serif;
     color: #f4fff5;
     word-wrap: break-word;
+}
+
+.information-list button{
+    max-width: 250px;
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-family: 'e-Ukraine', sans-serif;
+    color: #f4fff5;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.information-list button:hover{
+    background-color: transparent;
 }
 
 .working_steps{
