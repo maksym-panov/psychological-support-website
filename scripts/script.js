@@ -23,6 +23,11 @@ const scrollToElement = (targetId) => {
     block: 'center',
   });
 };
+const url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
+
+const openLink = () =>{
+  window.location.href = url;
+}
 
 /**
  * Adds random positive value based on STATISTICS_CHANGE_RATE
